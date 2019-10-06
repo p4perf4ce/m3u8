@@ -745,6 +745,8 @@ class StreamInfo(object):
             stream_inf.append('CLOSED-CAPTIONS=%s' % self.closed_captions)
         if self.bandwidth is not None:
             stream_inf.append('BANDWIDTH=%d' % self.bandwidth)
+        if self.subtitles is not None:
+            stream_inf.append('SUBTITLES=%s' % self.subtitles)
         if self.average_bandwidth is not None:
             stream_inf.append('AVERAGE-BANDWIDTH=%d' %
                               self.average_bandwidth)
